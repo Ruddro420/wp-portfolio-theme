@@ -28,11 +28,14 @@ get_header();
     <div class="gradient-circle"></div>
     <div class="gradient-circle-two"></div>
 </div>
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-	<?php echo the_content(); ?>
+    <?php echo the_content(); ?>
 
-	</main>
+</main>
+<!-- About Section -->
+<?php require get_template_directory() . '/template-parts/about-section.php'; ?>
+
 
 <?php
 get_footer();

@@ -156,6 +156,14 @@ function portfoliome_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'portfoliome_scripts' );
 
+
+
+
+/**
+ * required plugin
+ */
+require get_template_directory() . '/inc/required-plugin.php';
+
 /**
  * Implement the Custom Header feature.
  */
@@ -187,6 +195,10 @@ require get_template_directory() . '/inc/short-code.php';
  * Short Code
  */
 require get_template_directory() . '/inc/custom-widget.php';
+/**
+ * Short Code
+ */
+//require get_template_directory() . '/inc/create-page.php';
 
 /**
  * Load Jetpack compatibility file.

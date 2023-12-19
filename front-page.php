@@ -73,7 +73,7 @@ get_header();
                 $categories = get_the_terms(get_the_ID(), 'portfolio_category'); // Replace 'portfolio_category' with your actual taxonomy slug
                 ?>
                 <div class="main-product mt-10" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>');
-                    background-size: fit;
+                    background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
                     ">

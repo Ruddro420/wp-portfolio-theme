@@ -37,6 +37,8 @@ get_header();
 		</div>
 </di>
 </main>
+<!-- About Section -->
+<?php require get_template_directory() . '/template-parts/about-section.php'; ?>
 
 <?php
 get_footer();

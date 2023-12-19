@@ -40,6 +40,24 @@ a:hover {
 #masthead{
   margin-top: -10px!important;
 }
+/* Contact from 7  */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+  color: #666!important;
+  border: 2px solid #ccc!important;
+  border-radius: 3px!important;
+  width: 100%!important;
+  margin-top: 13px!important;
+  margin-bottom: 13px!important;
+  padding: 10px!important;
+}
+
+input[type="submit"]{
+  padding: 15px;
+  color: #ffffff !important;
+  background: linear-gradient(to right, var(--gradiant1), var(--gradiant2), var(--gradiant3));
+  border-radius: 2px;
+  box-shadow: 5px 5px 20px rgba(247, 247, 247, 0.1);
+}
 /* * {
   margin: 0;
   padding: 0;
@@ -223,7 +241,7 @@ li>a {
   color: white !important;
 }
 
-.work-container::before {
+.work-container:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -234,15 +252,23 @@ li>a {
       rgba(0, 0, 0, 1),
       rgb(196, 113, 237, 0.6),
       rgb(246, 79, 89, 0.8));
-      
-  /* Adjust the gradient colors and opacity as desired */
 }
 
 /* Product Details */
-.product-content {
+/* .product-content {
   position: absolute;
   bottom: 60px;
   color: white!important;
+} */
+.product-content {
+  position: absolute;
+  bottom: 30px;
+  color: white!important;
+  background: linear-gradient(to right, #321F32, #15313F);
+  width: 90%;
+  padding: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
 }
 
 .product-content h5 {

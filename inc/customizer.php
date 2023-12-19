@@ -62,7 +62,7 @@ function portfoliome_customize_register($wp_customize)
 		));
 		// hero section settings
 		$wp_customize->add_setting('portfoliome_hero_section', array(
-			'default' => 'Creativity is the process of having orginal ideas.',
+			'default' => '<span>Creativity</span> is the process of having orginal <span>ideas.</span>',
 		));
 		// hero section controller
 		$wp_customize->add_control('portfoliome_hero_section', array(
@@ -188,6 +188,42 @@ function portfoliome_customize_register($wp_customize)
 			'type' => 'color',
 			'priority' => 4,
 		)));
+		// theme work section color-1
+		$wp_customize->add_setting('portfoliome_work_section_color-1', array(
+			'default' => '#321F32',
+		));
+		// theme work section color-1 controller
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'portfoliome_work_section_color-1', array(
+			'label' => 'Work Section Color 1',
+			'settings' => 'portfoliome_work_section_color-1',
+			'section' => 'portfoliome_theme_color',
+			'type' => 'color',
+			'priority' => 5,
+		)));
+		// theme work section color-2
+		$wp_customize->add_setting('portfoliome_work_section_color-2', array(
+			'default' => '#15313F',
+		));
+		// theme work section color-2 controller
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'portfoliome_work_section_color-2', array(
+			'label' => 'Work Section Color 2',
+			'settings' => 'portfoliome_work_section_color-2',
+			'section' => 'portfoliome_theme_color',
+			'type' => 'color',
+			'priority' => 6,
+		)));
+		// theme work section color-3
+		$wp_customize->add_setting('portfoliome_work_section_color-3', array(
+			'default' => '#ffffff',
+		));
+		// theme work section color-3 controller
+		$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'portfoliome_work_section_color-3', array(
+			'label' => 'Border Color',
+			'settings' => 'portfoliome_work_section_color-3',
+			'section' => 'portfoliome_theme_color',
+			'type' => 'color',
+			'priority' => 7,
+		)));
 
 	}
 }
@@ -202,37 +238,29 @@ function portfoliome_custom_css()
 			background:
 				<?php echo get_theme_mod('portfoliome_header_color'); ?>
 		}
+
 		:root {
-			--gradiant1: <?php echo get_theme_mod('portfoliome_text_gradinat-1'); ?>;
-			--gradiant2: <?php echo get_theme_mod('portfoliome_text_gradinat-2'); ?>;
-			--gradiant3:<?php echo get_theme_mod('portfoliome_text_gradinat-3'); ?>;
+			--gradiant1:
+				<?php echo get_theme_mod('portfoliome_text_gradinat-1'); ?>
+			;
+			--gradiant2:
+				<?php echo get_theme_mod('portfoliome_text_gradinat-2'); ?>
+			;
+			--gradiant3:
+				<?php echo get_theme_mod('portfoliome_text_gradinat-3'); ?>
+			;
 		}
 
-		/* .hero-container span {
+		.product-content {
 			background: linear-gradient(to right,
-					<?php echo get_theme_mod('portfoliome_text_gradinat-1'); ?>
+					<?php echo get_theme_mod('portfoliome_work_section_color-1'); ?>
 					,
-					<?php echo get_theme_mod('portfoliome_text_gradinat-2'); ?>
-					,
-					<?php echo get_theme_mod('portfoliome_text_gradinat-3'); ?>
+					<?php echo get_theme_mod('portfoliome_work_section_color-2'); ?>
 				);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
+			border: 2px solid
+				<?php echo get_theme_mod('portfoliome_work_section_color-3'); ?>
+			;
 		}
-
-		.workShow-container span {
-			background: linear-gradient(to right,
-					<?php echo get_theme_mod('portfoliome_text_gradinat-1'); ?>
-					,
-					<?php echo get_theme_mod('portfoliome_text_gradinat-2'); ?>
-					,
-					<?php echo get_theme_mod('portfoliome_text_gradinat-3'); ?>
-				);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-		} */
 	</style>
 	<?php
 }
