@@ -27,21 +27,23 @@ get_header();
     <div class="workShow-container">
         <div class="inner-hero">
             <div class="inner-text">
-                <h2 class="text-white"><span>AMAZING WORKS</span>.</h2>
+                <h2 class="text-white"><span>
+                        <?php echo get_theme_mod('portfoliome_working_section'); ?>
+                    </span>.</h2>
             </div>
             <div class="working-category">
                 <div class="list-category">
                     <ul>
                         <?php
                         $displayed_categories = array(); // Array to store displayed category IDs
-
+                        
                         if ($portfolio_query->have_posts()) {
                             while ($portfolio_query->have_posts()) {
                                 $portfolio_query->the_post();
                                 $categories = get_the_terms(get_the_ID(), 'portfolio_category'); // Replace 'portfolio_category' with your actual taxonomy slug
                                 ?>
                                 <?php
-                                 if ($categories && !is_wp_error($categories)) {
+                                if ($categories && !is_wp_error($categories)) {
                                     foreach ($categories as $category) {
                                         if (!in_array($category->term_id, $displayed_categories)) {
                                             echo '<li>' . '<a href="' . get_term_link($category) . '">' . $category->name . '</a>' . '</li>';
@@ -106,7 +108,7 @@ get_header();
         ?>
 </section>
 <!-- About Section -->
-<?php require get_template_directory() . '/template-parts/about-section.php';   ?>
+<?php require get_template_directory() . '/template-parts/about-section.php'; ?>
 
 
 <?php get_footer() ?>

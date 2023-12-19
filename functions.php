@@ -183,6 +183,10 @@ require get_template_directory() . '/inc/custom-post.php';
  * Short Code
  */
 require get_template_directory() . '/inc/short-code.php';
+/**
+ * Short Code
+ */
+require get_template_directory() . '/inc/custom-widget.php';
 
 /**
  * Load Jetpack compatibility file.

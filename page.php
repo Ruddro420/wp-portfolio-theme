@@ -14,25 +14,25 @@
 
 get_header();
 ?>
-
+<!-- Hero Section -->
+<div class="hero-container">
+    <div class="inner-hero">
+        <div class="inner-text">
+            <h1 class="text-white">
+                <span>
+                    <?php echo the_title(); ?>
+                </span>.
+            </h1>
+        </div>
+    </div>
+    <div class="gradient-circle"></div>
+    <div class="gradient-circle-two"></div>
+</div>
 	<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<?php echo the_content(); ?>
 
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+	</main>
 
 <?php
-get_sidebar();
 get_footer();
