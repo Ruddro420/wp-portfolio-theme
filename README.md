@@ -4,7 +4,7 @@
 
 #### Author URI: https://ruddro.info/
 
-#### Plugin URI: https://wordpress.org/themes/portfolioME/
+#### DOWNLOAD URI: http://techitrick.com/wp-content/uploads/2023/12/portfoliome.zip
 
 #### Tags: custom-portfolio, portfolio-website, custom-design, developers-portfolio, designers-portfolio, simple-website
 
@@ -26,7 +26,6 @@
 
 "PortfolioME is a versatile and sleek WordPress theme designed for developers and designers to showcase their work elegantly. With a clean and modern design, it offers a perfect canvas to display portfolios, projects, and creative endeavors. Crafted with simplicity in mind, PortfolioME empowers users to create a professional online presence effortlessly, allowing their work to take center stage."
 
-Theme Documentation: [https://wordpress.org/themes/portfolioME/](https://wordpress.org/themes/portfolioME/)
 
 *   [Need Help?](https://www.linkedin.com/in/ali-fiad-ruddro)
 *   [About Author](https://github.com/Ruddro420)
