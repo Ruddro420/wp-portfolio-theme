@@ -4,7 +4,7 @@
 
 #### Author URI: https://ruddro.info/
 
-#### DOWNLOAD URI: http://techitrick.com/wp-content/uploads/2023/12/portfoliome.zip
+#### DOWNLOAD URI: https://drive.google.com/file/d/1WiUTAXb6JRIVo195P6lc5E9X2ZQ6oxv2/view?usp=sharing
 
 #### Tags: custom-portfolio, portfolio-website, custom-design, developers-portfolio, designers-portfolio, simple-website
 
