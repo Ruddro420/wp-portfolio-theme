@@ -196,6 +196,10 @@ require get_template_directory() . '/inc/short-code.php';
  */
 require get_template_directory() . '/inc/custom-widget.php';
 /**
+ * Demo import 
+ */
+require get_template_directory() . '/inc/portfoliome-demo-import.php';
+/**
  * Short Code
  */
 //require get_template_directory() . '/inc/create-page.php';

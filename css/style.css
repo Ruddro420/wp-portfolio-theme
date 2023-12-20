@@ -9,14 +9,15 @@ html {
   scroll-behavior: smooth;
 }
 a:visited {
-  color: white!important;
+  color: white;
 }
-a:hover {
+.site-header a:hover {
   color: white!important;
 }
 .page {
   margin: 0 0 0em!important;
 }
+
 /* Single portfolio page */
 .single-work-container{
   width: 90%;
@@ -467,4 +468,7 @@ footer{
   .site-title{
     color: black;
   }
+  a:visited {
+    color: black!important;
+}
 }

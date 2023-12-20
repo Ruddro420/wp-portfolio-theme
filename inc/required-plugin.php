@@ -12,7 +12,11 @@ function my_theme_register_required_plugins() {
             'slug'     => 'contact-form-7',
             'required' => true,
         ),
-        // Add other plugins as needed in a similar format
+        array(
+            'name'     => 'One Click Demo Import',
+            'slug'     => 'one-click-demo-import',
+            'required' => true,
+        ),
     );
 
     $config = array(

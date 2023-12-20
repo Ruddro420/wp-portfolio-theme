@@ -3,9 +3,9 @@ Theme Name: portfolioME
 Theme URI: #
 Author: ALI FIAD RUDDRO
 Author URI: https://ruddro.info
-Description: A simple portfolio website for all kinds of developers and designers.
+Description: "PortfolioME is a versatile and sleek WordPress theme designed for developers and designers to showcase their work elegantly. With a clean and modern design, it offers a perfect canvas to display portfolios, projects, and creative endeavors. Crafted with simplicity in mind, PortfolioME empowers users to create a professional online presence effortlessly, allowing their work to take center stage."
 Version: 1.0.0
-Tested up to: 5.4
+Tested up to: 6.4.2
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -56,8 +56,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Normalize
 --------------------------------------------- */
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
 	 ========================================================================== */
